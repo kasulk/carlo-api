@@ -22,7 +22,7 @@ export const data = [
     colors: ["#1c2026", "#fe449b", "#681703", "#b9ddfe", "#f6f5e1"],
     dimensions: { height: 3116, width: 4620, type: "jpg" },
 
-    resolutionDPI: 72,
+    dpi: 72,
     technique: "copics-crayon-acryl-neon",
     originalRepro: "repro",
     price: 15320,
