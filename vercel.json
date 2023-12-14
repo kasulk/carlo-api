@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/api/art.js"
+    },
+    {
+      "src": "/art",
+      "methods": ["GET"],
+      "dest": "/api/art.js"
+    }
+  ]
+}
