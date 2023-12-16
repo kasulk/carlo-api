@@ -5,17 +5,9 @@
       "dest": "/api/art.js",
       "methods": ["GET"],
       "headers": {
-        "Access-Control-Allow-Origin": [
-          "http://localhost:3000",
-          "https://art-gallery-2000.vercel.app"
-        ],
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET"
       }
-    },
-    {
-      "src": "/art",
-      "methods": ["GET"],
-      "dest": "/api/art.js"
     }
   ]
 }
