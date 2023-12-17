@@ -29,4 +29,21 @@ export const data = [
     currency: "Euro",
     dimensionsCM: { height: 27.7, width: 42 },
   },
+  {
+    slug: "pink-revolution2",
+    artist: "Carlo Kozlovic",
+    name: "Pink Revolution",
+    imageSource: "https://carlo-api.vercel.app/assets/art/pink-revolution.jpg",
+    year: "2012",
+    genre: "Abstract Painting",
+    colors: ["#1c2026", "#fe449b", "#681703", "#b9ddfe", "#f6f5e1"],
+    dimensions: { height: 3116, width: 4620, type: "jpg" },
+
+    dpi: 72,
+    technique: "copics-crayon-acryl-neon",
+    originalRepro: "repro",
+    price: 15320,
+    currency: "Euro",
+    dimensionsCM: { height: 27.7, width: 42 },
+  },
 ];
