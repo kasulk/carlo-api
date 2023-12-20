@@ -29,4 +29,21 @@ export const data = [
     currency: "Euro",
     dimensionsCM: { height: 27.7, width: 42 },
   },
+  {
+    slug: "shessobuttelfly",
+    artist: "Carlo Kozlovic",
+    name: "shessobutterfly",
+    imageSource: "https://carlo-api.vercel.app/assets/art/shessobuttelfly.jpg",
+    year: "2023",
+    genre: "Abstract Painting",
+    colors: ["#fcdcf0", "#feefc6", "#fc5a70", "#a06d6c", "#da6b33"],
+    dimensions: { height: 1080, width: 806, type: "jpg" },
+
+    dpi: 72,
+    technique: "digital-painting",
+    originalRepro: "original",
+    price: 50000,
+    currency: "Euro",
+    dimensionsCM: { height: 29.7, width: 21 },
+  },
 ];
