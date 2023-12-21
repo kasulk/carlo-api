@@ -12,7 +12,7 @@ export const data = [
 
     dpi: 72,
     technique: "copics-crayon-acryl-neon",
-    originalRepro: "repro",
+    repro: true,
     price: 15320,
     currency: "Euro",
     dimensionsCM: { height: 27.7, width: 42 },
@@ -32,7 +32,7 @@ export const data = [
 
     dpi: 72,
     technique: "digital-painting",
-    originalRepro: "original",
+    repro: false,
     price: 50000,
     currency: "Euro",
     dimensionsCM: { height: 29.7, width: 21 },
