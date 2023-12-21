@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3001
+EXPOSE 5000
 
 CMD [ "node", "/api/art.js" ]
