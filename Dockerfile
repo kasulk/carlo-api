@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:20-slim
 
 WORKDIR /app
 
@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD [ "node", "/api/art.js" ]
+CMD [ "node", "api/art.js" ]
