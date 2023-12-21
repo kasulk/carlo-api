@@ -2,12 +2,12 @@ FROM node:20-slim
 
 WORKDIR /app
 
-COPY package*.json .
+COPY package*.json /app
 
 RUN npm install
 
-COPY . .
+COPY . /app
 
 EXPOSE 5000
 
-CMD [ "node", "api/art.js" ]
+CMD [ "npm", "start" ]
