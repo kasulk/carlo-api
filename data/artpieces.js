@@ -4,7 +4,7 @@ const artist = "Carlo Kozlovic";
 export const data = [
   {
     name: "Pink Revolution",
-    slug: "pink-revolution",
+    // slug: "pink-revolution",
     year: "2012",
     genre: "Abstract Painting",
     colors: ["#1c2026", "#fe449b", "#681703", "#b9ddfe", "#f6f5e1"],
@@ -16,7 +16,7 @@ export const data = [
   },
   {
     name: "shessobutterfly",
-    slug: "shessobuttelfly",
+    // slug: "shessobuttelfly",
     year: "2023",
     genre: "Abstract Painting",
     colors: ["#fcdcf0", "#feefc6", "#fc5a70", "#a06d6c", "#da6b33"],
@@ -28,8 +28,18 @@ export const data = [
   },
 ];
 
+// add artist and imageSource to objects
 data.forEach((artpiece) => {
   artpiece.artist = artist;
   artpiece.imageSource =
     imagePath + artpiece.slug + "." + artpiece.dimensions.type;
+  artpiece.slug = createSlug(artpiece.name);
 });
+
+function createSlug(str) {
+  return str
+    .toLowerCase()
+    .replace(/[^a-z]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
