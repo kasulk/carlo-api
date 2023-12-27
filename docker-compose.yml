@@ -1,0 +1,12 @@
+services:
+  carlo-api:
+    build: .
+    image: carlo-api_image # name (and tag) for image
+    container_name: carlo-api_container
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+      - /app/node_modules #unmap node_modules from volume
+    environment:
+      - NODE_ENV=development
